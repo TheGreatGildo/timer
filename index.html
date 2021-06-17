@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alert</title>
+    <style>
+        body {
+            background-color: #161519;
+            background-image: url(SpaceBg.png);
+            background-position: 50%;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            outline: none;
+            color: #f5c09a;
+            font-family: "Work Sans", sans-serif;
+            font-size: 14px;
+            text-align: center;
+        }
+        button {
+            background-color: #242735;
+            color: #f5c09a;
+            border-radius: 7px 7px 0 0;
+            border: 1px solid #f5c09a;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <img alt="Logo" src="sponge.png">
+    <button onclick="start()" type="button">Start</button>
+    <button type="button" onclick="stopAlarm()">Stop current alarm</button>
+    <button type="button" onclick="stopAll()">Stop all</button>
+    <pre id="content"></pre>
+
+    <label for="alarm1">One hour alarm</label>
+    <select id="alarm1">
+        <option value="alarms/Alert.wav">Alarm</option>
+        <option value="alarms/Alert1.wav">Alarm1</option>
+        <option value="alarms/Alert2.wav">Alarm2</option>
+        <option value="alarms/Alert3.wav">Alarm3</option>
+        <option value="alarms/Alert4.wav">Alarm4</option>
+        <option value="alarms/Alert5.mp3">Alarm5</option>
+        <option value="alarms/Alert6.wav">Alarm6</option>
+        <option value="alarms/Alert7.wav">Alarm7</option>
+        <option value="alarms/Alert8.mp3">Alarm8</option>
+        <option value="alarms/Alert9.wav">Alarm9</option>
+        <option value="alarms/Alert10.wav">Alarm10</option>
+        <option value="alarms/Alert11.wav">Alarm11</option>
+        <option value="alarms/Alert12.wav">Alarm12</option>
+    </select>
+    <button type="button" onclick="testAlarm(document.getElementById('alarm1').value)">Test alarm</button>
+    <br />
+
+    <label for="alarm2">Fifteen minute alarm</label>
+    <select id="alarm2">
+        <option value="alarms/Alert.wav">Alarm</option>
+        <option value="alarms/Alert1.wav">Alarm1</option>
+        <option value="alarms/Alert2.wav">Alarm2</option>
+        <option value="alarms/Alert3.wav">Alarm3</option>
+        <option value="alarms/Alert4.wav">Alarm4</option>
+        <option value="alarms/Alert5.mp3">Alarm5</option>
+        <option value="alarms/Alert6.wav">Alarm6</option>
+        <option value="alarms/Alert7.wav">Alarm7</option>
+        <option value="alarms/Alert8.mp3">Alarm8</option>
+        <option value="alarms/Alert9.wav">Alarm9</option>
+        <option value="alarms/Alert10.wav">Alarm10</option>
+        <option value="alarms/Alert11.wav">Alarm11</option>
+        <option value="alarms/Alert12.wav">Alarm12</option>
+    </select>
+    <button type="button" onclick="testAlarm(document.getElementById('alarm2').value)">Test alarm</button>
+    <br />
+
+    <label for="alarm3">Five minute alarm</label>
+    <select id="alarm3">
+        <option value="alarms/Alert.wav">Alarm</option>
+        <option value="alarms/Alert1.wav">Alarm1</option>
+        <option value="alarms/Alert2.wav">Alarm2</option>
+        <option value="alarms/Alert3.wav">Alarm3</option>
+        <option value="alarms/Alert4.wav">Alarm4</option>
+        <option value="alarms/Alert5.mp3">Alarm5</option>
+        <option value="alarms/Alert6.wav">Alarm6</option>
+        <option value="alarms/Alert7.wav">Alarm7</option>
+        <option value="alarms/Alert8.mp3">Alarm8</option>
+        <option value="alarms/Alert9.wav">Alarm9</option>
+        <option value="alarms/Alert10.wav">Alarm10</option>
+        <option value="alarms/Alert11.wav">Alarm11</option>
+        <option value="alarms/Alert12.wav">Alarm12</option>
+    </select>
+    <button type="button" onclick="testAlarm(document.getElementById('alarm3').value)">Test alarm</button>
+    <br />
+
+    <button onclick="save()" type="button">Save</button>
+</div>
+<script src="./bundle.js"></script>
+</body>
+</html>
